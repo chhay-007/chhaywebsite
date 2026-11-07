@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Identification Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .id-card-container {
+            width: 450px;
+            background: #ffffff;
+            padding: 30px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1.university-title {
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            margin: 0 0 10px 0;
+            color: #000;
+        }
+
+        h2.card-subtitle {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            margin: 0 0 20px 0;
+            color: #000;
+        }
+
+        .photo-container img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        h3.card-main-title {
+            font-size: 16px;
+            margin: 10px 0 20px 0;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #666;
+            padding: 8px 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            width: 40%;
+        }
+
+        td {
+            width: 60%;
+        }
+
+        .validity {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .signatures {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        .signature-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .signature-line span {
+            border-bottom: 1px solid #000;
+            width: 220px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="id-card-container">
+
+        <h1 class="university-title">NATIONAL UNIVERSITY OF BATTAMBANG</h1>
+        <h2 class="card-subtitle">STUDENT IDENTIFICATION CARD</h2>
+
+        <div class="photo-container">
+            <img src="chhaypic.jpg" alt="Tat yongchhay">
+        </div>
+
+        <h3 class="card-main-title">STUDENT CARD</h3>
+
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <a href="myprofile.html"> <td>Tat Yongchhay</td></a>
+            </tr>
+            <tr>
+                <th>Student ID</th>
+                <td>NUBB-2026-001</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>23 March 2007</td>
+            </tr>
+            <tr>
+                <th>Major</th>
+                <td>Information Technology</td>
+            </tr>
+            <tr>
+                <th>Academic Year</th>
+                <td>2026-2027</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>tatyongchhay07@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>071 799 2987</td>
+            </tr>
+        </table>
+
+        <div class="validity">
+            Valid Academic Year: 2026-2027
+        </div>
+
+        <div class="signatures">
+            <div class="signature-line">
+                <label>Student Signature:</label>
+                <span></span>
+            </div>
+            <div class="signature-line">
+                <label>Authorized Signature:</label>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
